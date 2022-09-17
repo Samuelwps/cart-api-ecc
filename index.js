@@ -12,6 +12,7 @@ app.get("/produtos", (req, res) => {
 })
 
 app.get("/stock", (req, res) => {
+    res.setHeader("Access-Control-Allow-Origin", "http://localhost:3001")
     return res.json(stock)
 })
 
