@@ -7,12 +7,12 @@ const produtos = require("./src/produtos/produtos.json")
 const stock = require("./src/stock/stock.json")
 
 app.get("/produtos", (req, res) => {
-    res.setHeader("Access-Control-Allow-Origin", "*")
+    res.setHeader("Access-Control-Allow-Origin", "https://carrinho-three.vercel.app")
     return res.json(produtos)
 })
 
 app.get("/stock", (req, res) => {
-    res.setHeader("Access-Control-Allow-Origin", "*")
+    res.setHeader("Access-Control-Allow-Origin", "https://carrinho-three.vercel.app")
     return res.json(stock)
 })
 
